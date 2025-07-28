@@ -39,10 +39,10 @@ resource publicIP 'Microsoft.Network/publicIPAddresses@2023-05-01' = {
   name: 'vm-publicip'
   location: location
   sku: {
-    name: 'Basic'
+    name: 'Standard'
   }
   properties: {
-    publicIPAllocationMethod: 'Dynamic'
+    publicIPAllocationMethod: 'Static'
   }
 }
 
