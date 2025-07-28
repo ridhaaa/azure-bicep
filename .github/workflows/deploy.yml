@@ -1,6 +1,27 @@
-- name: Deploy Bicep
-  run: |
-    az deployment group create \
-      --resource-group azure-bicep \
-      --template-file bicep/main.bicep \
-      --parameters adminPassword=${{ secrets.ADMIN_PASSWORD }}
+name: Deploy Bicep to Azure
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Azure Login
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - name: Deploy Bicep
+        run: |
+          az deployment group create \
+            --resource-group azure-bicep \
+            --template-file bicep/main.bicep \
+            --parameters adminPassword='${{ secrets.ADMIN_PASSWORD }}' \
+                         storageAccountName='storage${{ github.run_id }}'
