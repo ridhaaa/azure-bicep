@@ -1,7 +1,6 @@
-- name: Deploy Bicep to Resource Group
+- name: Deploy Bicep
   run: |
     az deployment group create \
       --resource-group azure-bicep \
       --template-file bicep/main.bicep \
-      --parameters storageAccountName=bicepsecurestorage
---parameters storageAccountName=mysecurestorageacct adminPassword=${{ secrets.ADMIN_PASSWORD }}
+      --parameters adminPassword=${{ secrets.ADMIN_PASSWORD }}
