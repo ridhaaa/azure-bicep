@@ -2,11 +2,15 @@
 
 Microsoft Defender for Cloud was configured to monitor threats, assess posture, and provide security recommendations across the Azure environment.
 
+---
+
 ## ⚙️ Plans Enabled
 
 Enabled Defender plans at the subscription level to cover core resources like virtual machines, storage, and more. Plans were activated from **Environment Settings > Defender plans**.
 
 ![Defender Plans](screenshots/defender-plans.png)
+
+---
 
 ## 📊 Security Posture Overview
 
@@ -18,6 +22,8 @@ After successful deployment, Defender assessed 9 resources in the environment.
 - **Critical / High / Medium / Low Risk Items:** 0
 - **Not Evaluated Resources:** 31
 - **Security Alerts / Attack Paths:** None at this stage
+  
+---
 
 ## ✅ Outcome
 
