@@ -26,7 +26,7 @@ azure-defender-cost/
 ## 🧭 Documentation Breakdown
 
 - `deployment.md` – Bicep deployment process and GitHub Actions workflow
-- `cost-management.md` – Budget setup, alert rules, and cost analysis 
+- `cost-management.md` – Budget setup, alert rules, cost analysis and Advisor
 - `defender.md` – Defender plan configuration and security recommendations
 - `docs/screenshots/` – Screenshots 
 
