@@ -3,28 +3,21 @@ Provisioned cloud infrastructure using Bicep templates, triggered by GitHub Acti
 
 ---
 
-## Deployment Flow
-
-- **Infrastructure as Code:** Azure Bicep  
-- **CI/CD:** GitHub Actions  
-- **Authentication:** Azure Service Principal  
-- **Scope:** Resource Group (`azure-bicep`)  
+## Deployment 
+ 
+![deployment](screenshots/bicep-deploy-overview.png)
 
 ---
 
 ## Service Principal Authentication  
-Created a service principal with contributor access scoped to the resource group.
+Created a service principal with contributor access only to the resource group.
 
 - **Command Used:**  
-  ```
-  az ad sp create-for-rbac `
-    --name "gh-bicep-deploy" `
-    --role contributor `
-    --scopes /subscriptions/<subscription-id>/resourceGroups/azure-bicep `
-    --sdk-auth
-  ```
+ 
+![cmd](screenshots/sp-command.png)
 
-  Output: JSON credentials securely stored as a GitHub Secret (AZURE_CREDENTIALS)
+Output: JSON credentials securely stored as a GitHub Secret (AZURE_CREDENTIALS)
+![secret](screenshots/repo-secrets.png)
 
   ## 🛠️ GitHub Actions Workflow
 
@@ -42,3 +35,8 @@ Set up GitHub Actions to automatically deploy Bicep templates to Azure using a s
 
 ### ✅ Result
 On every push to main, the workflow automatically deploys the latest infrastructure changes to Azure.
+
+![run](screenshots/workflow-runs.png)
+
+Resources are listed in the portal after successful deployment through GitHub Actions
+![Resources](screenshots/resources.png)
