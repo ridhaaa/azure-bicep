@@ -42,7 +42,8 @@ az ad sp create-for-rbac `
 - Connected to Cost Analysis blades in the portal
 - Tagged resources for tracking using Cost Allocation Tags
 
-📁 Structure
+## 📁 Structure
+```
 azure-defender-cost/
 ├── bicep/
 │ ├── main.bicep
@@ -54,13 +55,14 @@ azure-defender-cost/
 │ ├── cost-management.md
 │ └── screenshots/
 └── README.md
+```
 
-🧭 Documentation Breakdown
+## 🧭 Documentation Breakdown
 📄 defender.md — Defender plan setup, portal validation steps
 📄 cost-management.md — Budget setup, threshold logic, cost blade usage
 📸 docs/screenshots/ — Portal proof, budget alerts, GitHub deployment logs
 
-🔗 Resources
+## 🔗 Resources
 - Bicep Documentation – Microsoft Learn
 - Microsoft Defender for Cloud
 - Cost Management + Billing
