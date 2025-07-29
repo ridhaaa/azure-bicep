@@ -1,4 +1,4 @@
-# 🔐 Defender + Cost Insights Project
+# 🔐 Defender + Cost management Project
 Provisioned Microsoft Defender for Cloud and set up Cost Management tools using Bicep and secure deployment practices.
 
 ## 📌 Overview
@@ -25,10 +25,10 @@ azure-defender-cost/
 
 ## 🧭 Documentation Breakdown
 
-- deployment.md - bicep and github actions file
-- cost-management.md — Budget setup, threshold logic, cost blade usage
-- defender.md — Defender plan setup, portal validation steps
-- docs/screenshots/ — Portal proof, budget alerts, GitHub deployment logs
+- `deployment.md` – Bicep deployment process and GitHub Actions workflow
+- `cost-management.md` – Budget setup, alert rules, and cost analysis 
+- `defender.md` – Defender plan configuration and security recommendations
+- `docs/screenshots/` – Screenshots 
 
 ## 🔗 Resources
 - Bicep Documentation – Microsoft Learn
