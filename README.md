@@ -58,9 +58,9 @@ azure-defender-cost/
 ```
 
 ## 🧭 Documentation Breakdown
-📄 defender.md — Defender plan setup, portal validation steps
-📄 cost-management.md — Budget setup, threshold logic, cost blade usage
-📸 docs/screenshots/ — Portal proof, budget alerts, GitHub deployment logs
+- defender.md — Defender plan setup, portal validation steps
+- cost-management.md — Budget setup, threshold logic, cost blade usage
+- docs/screenshots/ — Portal proof, budget alerts, GitHub deployment logs
 
 ## 🔗 Resources
 - Bicep Documentation – Microsoft Learn
