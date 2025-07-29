@@ -9,39 +9,27 @@ Integrated Azure Cost Management to monitor and control resource spending within
 Created a monthly budget to receive alerts when cost thresholds are breached. This helps ensure that infrastructure remains within defined spending limits.
 
 - **Budget Name:** Azure Bicep Budget
-- **Scope:** Subscription (218c7651-2e81-4365-a60f-bae54d8b138f)
 - **Amount:** ₹100 INR
 - **Reset Period:** Monthly
 - **Alert Threshold:** 90%
 
-### 🔧 Budget Creation Screenshot
-
-![budget-creation](screenshots/cost-budget-create.png)
+![budget-creation](screenshots/budget-create.png)
 
 ---
 
 ## 📈 Cost Analysis
 
-Utilized **Cost Analysis** under Azure Cost Management to view the current cost usage by service/resource group. This provided insights into what services consumed budget and when.
+Utilized **Cost Analysis** under Azure Cost Management to view the current cost usage by resource group. This provided insights into what services consumed budget and when.
 
-### 🔍 Filtered by Resource Group
-
-- **Filter:** Resource Group `azure-bicep`
-- **Group By:** Service name or resource
-
-### 📸 Cost Analysis Screenshot
-
-![cost-analysis](screenshots/cost-analysis-breakdown.png)
+![cost-analysis](screenshots/cost-analysis.png)
 
 ---
 
-## 💡 Azure Advisor (Optional)
+## 💡 Azure Advisor
 
-Reviewed cost optimization recommendations from Azure Advisor. These tips help reduce unnecessary spending by right-sizing resources and identifying unused services.
+Reviewed cost optimization recommendations from Azure Advisor. 
 
-### 📸 Cost Recommendations Screenshot
-
-![advisor-cost-recommendations](screenshots/advisor-cost.png)
+![advisor-cost-recommendations](screenshots/advisor-cost-tab.png)
 
 ---
 
@@ -52,6 +40,4 @@ Reviewed cost optimization recommendations from Azure Advisor. These tips help r
 - Advisor suggestions used for cost optimization planning.
 
 ---
-
-## 🗂️ File Structure
 
